@@ -57,7 +57,7 @@
 				img.style.display = "inline-block";
 				//生成遮罩层
 				mask.style.display = "block";
-				
+				//获取鼠标在wrap中的位置
 				var mouseX = e.clientX - wrap.offsetLeft;
 				var mouseY = e.clientY - wrap.offsetTop
 	
@@ -67,7 +67,7 @@
 				var maskT = mouseY - maskH/2;
 				var parW = parseFloat( getComputedStyle(wrap,null).width);
 				var parH = parseFloat( getComputedStyle(wrap,null).height);
-				
+				//对遮罩层的位置进行判断
 				if (mouseX <　maskW /2 ) {
 					maskL = 0;
 				}
